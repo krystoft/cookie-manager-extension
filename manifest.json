@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Cookie管理小工具",
+  "name": "Cookie Manager",
   "version": "1.0",
-  "description": "管理网页Cookie - 支持新增、修改、删除、清空功能",
+  "description": "Manage website Cookies - Supports add, edit, delete, and clear functions.",
   "permissions": ["cookies", "activeTab", "storage"],
   "host_permissions": [
     "*://*/*"

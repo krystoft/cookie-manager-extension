@@ -1,6 +1,6 @@
 简体中文 | [English](/README.md)
 
-# 🎨  Cookie管理小工具
+# 🎨 Cookie管理小工具 (Cookie Manager)
 
 <div align="center">
   <img src="/public/demo.png" alt="Cookie Manager Extension" width="400"/>
@@ -10,15 +10,17 @@
 
 ---
 
-一款功能强大的浏览器扩展，用于管理网站Cookie，支持新增、编辑、删除和清空Cookie功能。
+一款功能强大的浏览器扩展，用于管理网站Cookie，支持新增、编辑、删除、清空以及批量导入Cookie功能。
 
 ## 功能特点
 
 - 🍪 **Cookie管理**：查看、添加、编辑和删除任何网站的Cookie
+- ⚡ **批量导入**：支持通过JSON格式批量导入多个Cookie
+- 🌍 **国际化支持**：支持中英文切换（默认英文）
 - 🔍 **搜索功能**：通过名称快速查找Cookie
 - 🌐 **域名支持**：跨不同域名和子域名管理Cookie
 - ⚡ **批量操作**：一键清空所有Cookie
-- 🎨 **用户友好界面**：简洁直观的弹出界面
+- 🎨 **现代UI**：简洁直观的卡片式弹出界面
 - 🔒 **高级选项**：支持Secure、HttpOnly和SameSite属性
 - 📅 **过期控制**：为Cookie设置自定义过期时间
 - 🔄 **实时更新**：即时刷新Cookie列表
@@ -43,12 +45,14 @@
 
 1. **打开扩展**：点击浏览器工具栏中的Cookie图标
 2. **查看Cookie**：弹出窗口将显示当前网站的所有Cookie
-3. **搜索Cookie**：使用搜索框按名称过滤Cookie
-4. **添加新Cookie**：点击"+ 新增Cookie"按钮并填写详细信息
-5. **编辑Cookie**：点击任何现有Cookie以修改其属性
-6. **删除Cookie**：点击Cookie旁边的删除按钮
-7. **清空所有**：使用"清空所有"按钮删除当前站点的所有Cookie
-8. **刷新**：点击"刷新"更新Cookie列表
+3. **切换语言**：点击顶部的"中文 / EN"按钮切换语言
+4. **搜索Cookie**：使用搜索框按名称过滤Cookie
+5. **添加新Cookie**：点击"+ 新增Cookie"按钮并填写详细信息
+6. **批量导入**：点击"批量导入"按钮，输入JSON数据 (格式: `[{"name":"c1","value":"v1"},...]`)
+7. **编辑Cookie**：点击任何现有Cookie以修改其属性
+8. **删除Cookie**：点击Cookie旁边的删除按钮
+9. **清空所有**：使用"清空所有"按钮删除当前站点的所有Cookie
+10. **刷新**：点击"刷新"更新Cookie列表
 
 ## Cookie属性
 
@@ -70,7 +74,7 @@
 
 - `cookies`：访问和修改浏览器Cookie
 - `activeTab`：访问当前标签页信息
-- `storage`：存储扩展设置
+- `storage`：存储扩展设置（如语言偏好）
 - `*://*/*`：访问所有网站的Cookie
 
 ## 开发信息

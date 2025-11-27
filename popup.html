@@ -7,71 +7,77 @@
 <body>
   <div class="container">
     <div class="header">
-      <h1>🍪 <span style="margin-left: 10px;">Cookie管理小工具</span></h1>
+      <div class="header-top">
+        <h1>🍪 <span data-i18n="title">Cookie Manager</span></h1>
+        <div class="lang-switch">
+          <button id="lang-toggle" class="btn-text">中文 / EN</button>
+        </div>
+      </div>
       <div class="domain-info">
         <!-- Added domain selector for subdomain support -->
         <select id="domain-selector" class="domain-selector">
-          <option value="">加载中...</option>
+          <option value="" data-i18n="loading">Loading...</option>
         </select>
       </div>
     </div>
 
     <div class="actions">
-      <button id="add-cookie" class="btn btn-primary">+ 新增Cookie</button>
-      <button id="clear-all" class="btn btn-danger">🗑️ 清空所有</button>
-      <button id="refresh" class="btn btn-secondary">🔄 刷新</button>
+      <button id="add-cookie" class="btn btn-primary" data-i18n="addCookie">+ Add Cookie</button>
+      <button id="import-cookies" class="btn btn-info" data-i18n="importCookies">Batch Import</button>
+      <button id="clear-all" class="btn btn-danger" data-i18n="clearAll">🗑️ Clear All</button>
+      <button id="refresh" class="btn btn-secondary" data-i18n="refresh">🔄 Refresh</button>
     </div>
 
     <div class="search-box">
-      <input type="text" id="search" placeholder="搜索Cookie名称...">
+      <input type="text" id="search" placeholder="Search cookies..." data-i18n-placeholder="searchPlaceholder">
     </div>
 
     <div class="cookie-list" id="cookie-list">
-      <div class="loading">正在加载Cookie...</div>
+      <div class="loading" data-i18n="loading">Loading cookies...</div>
     </div>
 
-    <!-- 添加/编辑Cookie模态框 -->
+    <!-- Add/Edit Cookie Modal -->
     <div id="cookie-modal" class="modal">
       <div class="modal-content">
         <div class="modal-header">
-          <h3 id="modal-title">新增Cookie</h3>
+          <h3 id="modal-title" data-i18n="modalAddTitle">Add Cookie</h3>
           <span class="close">&times;</span>
         </div>
         <div class="modal-body">
           <form id="cookie-form">
             <div class="form-group">
-              <label for="cookie-name">名称 *</label>
+              <label for="cookie-name"><span data-i18n="name">Name</span> *</label>
               <input type="text" id="cookie-name" required>
             </div>
             <div class="form-group">
-              <label for="cookie-value">值 *</label>
+              <label for="cookie-value"><span data-i18n="value">Value</span> *</label>
               <textarea id="cookie-value" required></textarea>
             </div>
             <div class="form-group">
-              <label for="cookie-domain">域名</label>
-              <input type="text" id="cookie-domain" placeholder="例如: .example.com">
+              <label for="cookie-domain" data-i18n="domain">Domain</label>
+              <input type="text" id="cookie-domain" placeholder="e.g., .example.com">
             </div>
             <div class="form-group">
-              <label for="cookie-path">路径</label>
+              <label for="cookie-path" data-i18n="path">Path</label>
               <input type="text" id="cookie-path" value="/" placeholder="/">
             </div>
             <div class="form-group">
-              <label for="cookie-expires">过期时间</label>
+              <label for="cookie-expires" data-i18n="expiration">Expiration</label>
               <input type="datetime-local" id="cookie-expires">
             </div>
             <div class="form-group checkbox-group">
               <label>
-                <input type="checkbox" id="cookie-secure"> Secure
+                <input type="checkbox" id="cookie-secure"> <span data-i18n="secure">Secure</span>
               </label>
               <label>
-                <input type="checkbox" id="cookie-httponly"> HttpOnly
+                <input type="checkbox" id="cookie-httponly"> <span data-i18n="httpOnly">HttpOnly</span>
               </label>
               <label>
-                <input type="checkbox" id="cookie-session"> Session Cookie
+                <input type="checkbox" id="cookie-session"> <span data-i18n="session">Session Cookie</span>
               </label>
             </div>
             <div class="form-group">
-              <label for="cookie-samesite">SameSite</label>
+              <label for="cookie-samesite" data-i18n="sameSite">SameSite</label>
               <select id="cookie-samesite">
                 <option value="no_restriction">None</option>
                 <option value="lax" selected>Lax</option>
@@ -81,8 +87,31 @@
           </form>
         </div>
         <div class="modal-footer">
-          <button type="button" id="save-cookie" class="btn btn-primary">保存</button>
-          <button type="button" id="cancel-cookie" class="btn btn-secondary">取消</button>
+          <button type="button" id="save-cookie" class="btn btn-primary" data-i18n="save">Save</button>
+          <button type="button" id="cancel-cookie" class="btn btn-secondary" data-i18n="cancel">Cancel</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Import Modal -->
+    <div id="import-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 data-i18n="modalImportTitle">Batch Import Cookies</h3>
+          <span class="close-import close">&times;</span>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label for="import-json">JSON Data *</label>
+            <textarea id="import-json" placeholder='[{"name":"cookie1","value":"value1"},{"name":"cookie2","value":"value2"}]' style="height: 200px;"></textarea>
+            <div class="hint" style="font-size: 12px; color: #666; margin-top: 5px;">
+              Format: JSON array of cookie objects. Required fields: name, value. Optional: domain, path, secure, etc.
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="do-import" class="btn btn-primary" data-i18n="import">Import</button>
+          <button type="button" id="cancel-import" class="btn btn-secondary" data-i18n="cancel">Cancel</button>
         </div>
       </div>
     </div>

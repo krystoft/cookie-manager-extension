@@ -10,15 +10,17 @@ English | [简体中文](/README_zh.md)
 
 ---
 
-A powerful browser extension for managing website cookies with support for adding, editing, deleting, and clearing cookies.
+A powerful browser extension for managing website cookies with support for adding, editing, deleting, clearing, and batch importing cookies.
 
 ## Features
 
 - 🍪 **Cookie Management**: View, add, edit, and delete cookies for any website
+- ⚡ **Batch Import**: Import multiple cookies at once via JSON format
+- 🌍 **Internationalization**: Support English and Chinese (switchable)
 - 🔍 **Search Functionality**: Quickly find cookies by name
 - 🌐 **Domain Support**: Manage cookies across different domains and subdomains
 - ⚡ **Batch Operations**: Clear all cookies at once with one click
-- 🎨 **User-Friendly Interface**: Clean and intuitive popup interface
+- 🎨 **Modern UI**: Clean and intuitive popup interface with card style design
 - 🔒 **Advanced Options**: Support for Secure, HttpOnly, and SameSite attributes
 - 📅 **Expiration Control**: Set custom expiration dates for cookies
 - 🔄 **Real-time Updates**: Refresh cookie list instantly
@@ -43,12 +45,14 @@ A powerful browser extension for managing website cookies with support for addin
 
 1. **Open the Extension**: Click the cookie icon in your browser toolbar
 2. **View Cookies**: The popup will show all cookies for the current website
-3. **Search Cookies**: Use the search box to filter cookies by name
-4. **Add New Cookie**: Click "+ Add Cookie" button and fill in the details
-5. **Edit Cookie**: Click on any existing cookie to modify its properties
-6. **Delete Cookie**: Click the delete button next to any cookie
-7. **Clear All**: Use "Clear All" button to remove all cookies for the current site
-8. **Refresh**: Click "Refresh" to update the cookie list
+3. **Switch Language**: Click "中文 / EN" in the header to switch language
+4. **Search Cookies**: Use the search box to filter cookies by name
+5. **Add New Cookie**: Click "+ Add Cookie" button and fill in the details
+6. **Batch Import**: Click "Import Cookies" to import JSON data (Format: `[{"name":"c1","value":"v1"},...]`)
+7. **Edit Cookie**: Click on any existing cookie to modify its properties
+8. **Delete Cookie**: Click the delete button next to any cookie
+9. **Clear All**: Use "Clear All" button to remove all cookies for the current site
+10. **Refresh**: Click "Refresh" to update the cookie list
 
 ## Cookie Properties
 
@@ -70,7 +74,7 @@ The extension requires the following permissions:
 
 - `cookies`: Access and modify browser cookies
 - `activeTab`: Access current tab information
-- `storage`: Store extension settings
+- `storage`: Store extension settings (like language preference)
 - `*://*/*`: Access cookies across all websites
 
 ## Development
